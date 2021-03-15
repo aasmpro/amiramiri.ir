@@ -1,0 +1,118 @@
+$color-white: #ffffff;
+$color-black: #000000;
+
+@font-face {
+  font-family: 'BSBlack';
+  src: url('../font/BSBlack.ttf') format('truetype');
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: $color-white;
+  background-color: $color-black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden !important;
+}
+
+#background {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.4;
+  overflow-x: hidden;
+
+  canvas {
+    overflow-x: hidden !important;
+  }
+}
+
+#backgroundText {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.1;
+  font-family: 'BSBlack', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 500px;
+
+  @media only screen and (max-width: 500px) {
+    font-size: 400px;
+  }
+
+  @media only screen and (max-width: 450px) {
+    font-size: 350px;
+  }
+
+  @media only screen and (max-width: 319px) {
+    font-size: 300px;
+  }
+  overflow-x: hidden !important;
+}
+
+#content {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden !important;
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      color: $color-white;
+    }
+
+    .dj-title {
+      text-align: center;
+      font-family: 'BSBlack', cursive;
+      font-weight: 200;
+      font-size: 100px;
+      display: flex;
+      flex-direction: column;
+      line-height: 0.9;
+      margin-top: 69px;
+
+      p {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      .amir-text {
+        font-size: 112px;
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 30px;
+
+    a {
+      color: $color-white;
+      font-size: 40px;
+    }
+  }
+}
