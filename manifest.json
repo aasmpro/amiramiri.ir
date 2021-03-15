@@ -1,6 +1,6 @@
 {
-  "short_name": "Melika",
-  "name": "Melika Amirhoseini",
+  "short_name": "AMIR",
+  "name": "AMIR AMIRI",
   "icons": [
     {
       "src": "favicon.ico",
@@ -15,6 +15,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#060606",
-  "background_color": "#060606"
+  "theme_color": "#000000",
+  "background_color": "#000000"
 }
